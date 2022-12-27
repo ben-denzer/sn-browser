@@ -77,7 +77,6 @@ function App() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    debugger;
     const fullUrl = `https://${encodeURI(urlValue.trim())}`;
 
     if (!validator.isURL(fullUrl)) {
