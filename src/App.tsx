@@ -94,7 +94,7 @@ function App() {
   return (
     <div className="bg-gray-50">
       <div className="mx-auto max-w-7xl py-12 px-4 lg:py-16 lg:px-8">
-        <h2 className="inline text-3xl font-bold tracking-tight text-gray-900">Enter your url</h2>
+        <h2 className="inline text-3xl font-bold tracking-tight text-gray-900">Enter a url</h2>
         <form className="mt-8" onSubmit={handleSubmit}>
           <div className="flex rounded-md shadow-sm">
             <span className="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-gray-500">
@@ -106,8 +106,8 @@ function App() {
               type="text"
               id={InputId.url}
               required={true}
+              autoFocus={true}
               className="block w-full min-w-0 flex-1 rounded-none rounded-r-md border-gray-300 px-3 py-2 focus:border-gray-500 focus:ring-gray-500 placeholder-gray-400"
-              placeholder="example.com"
             />
           </div>
           <div className="mt-3 rounded-md shadow">
@@ -166,7 +166,7 @@ function App() {
                     {bookmarks.map((site) => (
                       <tr key={site.id}>
                         <td className="whitespace-nowrap py-5 pl-4 pr-3 text-sm font-medium text-gray-900">
-                          <a className="text-gray-800 underline" href={`https://${site.url}`}>
+                          <a className="text-gray-800 underline p-3" href={`https://${site.url}`}>
                             {site.label}
                           </a>
                         </td>
