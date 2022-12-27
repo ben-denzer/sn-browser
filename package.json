@@ -1,7 +1,8 @@
 {
   "name": "browser",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "dependencies": {
     "@heroicons/react": "^2.0.13",
     "@tailwindcss/forms": "^0.5.3",
